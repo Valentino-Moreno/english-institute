@@ -1,0 +1,47 @@
+@import "../base/var";
+
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: map-get($colores,piel);
+    img{
+        @extend %imagen_footer;
+        padding-bottom: 25px;
+    }
+    p{
+        font-size: $tam_p;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        a{
+            font-size: $tam_a;
+            padding: 5px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: map-get($colores, rojo_oscuro);
+        }
+    }
+}
+@media (min-width: 1024px){
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .redes{
+            padding: 0px 100px 0px 20px;
+        }
+    }
+}

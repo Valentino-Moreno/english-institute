@@ -1,0 +1,93 @@
+@import "../base/var";
+
+#metodologias{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 180px 10px 200px 10px;
+    h1{
+        color: #105b91;
+        font-weight: bold;
+        font-size: $tam_h1 - 0.8;
+        padding: 10px;
+        text-align: center;
+        background-color: #abbcc92c;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        }
+    p{
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: $tam_p+0.5;
+        background-color: #04395e6c;
+        border-radius: 10px;
+        padding: 15px;
+    }
+}
+
+#metodos{
+    background-color: map-get($colores,azul);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    .metodo{
+        background-color: map-get($colores,azul_opaco);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        width: 80%;
+        border-radius: 20px;
+        padding: 20px 20px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        margin: 20px;
+        min-height: 55vh;
+        h2{
+            color: white;
+            text-align: center;
+        }
+        p{
+            color: white;
+            font-size: $tam_p;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    #metodologias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        h1{
+            font-size: $tam_h1+1.6;
+            max-width: 80%;
+        }
+        p{
+            font-size: $tam_p+2;
+            max-width: 80%;
+        }
+    }
+    #metodos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .metodo{
+            width: 40%;
+        }
+    }
+}

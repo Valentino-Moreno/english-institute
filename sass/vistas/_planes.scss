@@ -1,0 +1,71 @@
+@import "../base/var";
+#planes{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg);
+    @extend %img_centro;
+    @extend %centra;
+    padding: 220px 10px;
+    h1{
+        color: white;
+        font-size: $tam_h1;
+    }
+    p{
+        color: white;
+        font-size: $tam_p+0.2;
+        background-color: rgba(85, 84, 170, 0.144);
+        border-radius: 15px;
+    }
+}
+
+.planes{
+    background-color: map-get($colores,azul);
+    @extend %centra;
+    padding: 180px 5px;
+    p{
+        color: white;
+        font-size: $tam_p+0.2;
+        padding: 20px 30px;
+        text-align: center;
+    }
+    .pla{
+
+        h3{
+            font-size: $tam_h3;
+            color: map-get($colores,piel);
+        }
+        p{
+            padding: 5px;
+            text-align: justify;
+        }
+    }
+}
+.bg-targa{
+    background-color: map-get($colores,azul_opaco);
+    margin: 20px 10px;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+
+@media (min-width: 1024px){
+    #planes{
+        padding: 280px 20px;
+        h1{
+            font-size: $tam_h1+2;
+        }
+        p{
+            font-size: $tam_p+1;
+            background-color: rgba(85, 84, 170, 0.24);padding: 10px 30px;
+        }
+    }
+    .planes{
+        .tit{
+            font-size: 2em;
+        }
+       
+        .pla{
+            display: flex;
+            flex-direction: row;
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

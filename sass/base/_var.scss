@@ -1,0 +1,39 @@
+$tam_a:1.2em;
+$tam_p:1.2em;
+$tam_h1:4em;
+$tam_h3:2em;
+$tamp_ico:5.5em;
+
+// MAPAS
+$colores:(
+    rojo_oscuro:#6C0E23,
+    rojo:#C42021,
+    piel:#FFEAAE,
+    azul:#031D44,
+    azul_opaco:#04395E
+);
+
+
+// EXTENDS
+
+%imagen_header{
+    width: 160px;
+}
+
+%imagen_footer{
+    width: 130px;
+}
+%img_centro{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%centra{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+

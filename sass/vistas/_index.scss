@@ -1,0 +1,84 @@
+@import "../base/var";
+
+#inicio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 225px 20px 225px 20px;
+    h1{
+        color: white;
+        font-size: $tam_h1;
+        text-align: center;
+        border-bottom: solid 4px rgba(35, 79, 175, 0.911);
+        width: 80%;
+        
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: $tam_p+0.4;
+        padding-top: 5px;
+    }
+}
+
+#nosotros{
+    background-color: map-get($colores, azul);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px 10px 50px 10px;
+    .info-nosotros{
+        background-color: map-get($colores, azul_opaco);
+        border-radius: 15px;
+        width: 80%;
+        min-height: 45vh;
+        padding: 30px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        box-shadow: 5px 5px 20px;
+        margin: 20px;
+        p{
+            color: white;
+            font-size: $tam_p+0.2;
+        }
+        .ico{
+            font-size: $tamp_ico;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    #inicio{
+        h1{
+            font-size: $tam_h1+2;            
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-size: $tam_p+2;
+            padding-top: 5px;
+        }
+    }
+    #nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .info-nosotros{
+            max-width: 15em;
+            min-height: 30em;
+        }
+    }
+}

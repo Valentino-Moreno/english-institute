@@ -1,0 +1,55 @@
+@import "../base/var";
+
+#niveles{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/5792852/pexels-photo-5792852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 20px;
+    @extend %centra;
+    h1{
+        color: white;
+        font-weight: bold;
+        font-size: $tam_h1+1;
+        @extend %centra;
+    }
+    p{
+        color: white;
+        font-size: $tam_p+0.6;
+        @extend %centra;        
+    }
+}
+
+#nivel{
+    background-color: map-get($colores, azul);
+    @extend %centra;
+    padding: 60px 40px;
+    .niv{
+        background-color: map-get($colores, azul_opaco);
+        border-radius: 15px;
+        @extend %centra;
+        color:white;
+        padding: 10px;
+        margin: 20px;
+        width: 300px;
+        height: 20vh;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        h3{
+            font-size: 2em;
+        }
+        p{
+            font-size: $tam_p;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    #nivel{
+        display: flex;
+        flex-direction: row !important;
+        padding: 100px 20px;
+        .niv{
+            width: 340px;
+        }
+    }
+}
